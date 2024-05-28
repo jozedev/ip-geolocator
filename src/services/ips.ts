@@ -16,7 +16,6 @@ export function getIpData(ip? : string) : Promise<IpData> {
                 throw new Error(jsonResponse.message)
             }
 
-            console.log("nope")
             return {
                 ip: jsonResponse.query,
                 country: jsonResponse.country,

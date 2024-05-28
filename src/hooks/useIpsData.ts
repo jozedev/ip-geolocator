@@ -23,9 +23,7 @@ export function useIpsData() {
             setLoading(false)
             return { ok: true }
         }).catch((error: Error) => {
-            console.log(error)
             setLoading(false)
-            console.log({ ok: false, error: error.message })
             return { ok: false, error: error.message }
         })
     }
